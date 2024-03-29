@@ -1,0 +1,163 @@
+section.illustration {
+  background: #fff;
+}
+
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s ease-out;
+}
+
+.slide {
+  cursor: url("img/cursor.png"), auto;
+}
+
+.columns {
+  width: 104%;
+}
+
+.sold {
+  background-color: hotpink;
+  width: 30px;
+  height: 20px;
+}
+
+
+/*.more {
+  a {
+    text-transform: uppercase;
+  }
+
+  @media #{$max-md} {
+    font-size: 1.2em;
+  }
+
+  .navbar {
+    @media #{$md} {
+      height: 60px;
+      margin-bottom: 2px;
+    }
+
+    @media #{$max-md} {
+      margin-bottom: 3em;
+    }
+  }
+
+  .navbar-end {
+    @media screen and (max-width: 760px) {
+      width: 100%;
+      a {
+        float: left;
+
+        .icon {
+          font-size: 1.2em;
+          width: 1.2em;
+        }
+      }
+    }
+  }
+
+  section.brand {
+    @media screen and (max-width: 760px) {
+      padding-top: 0.4em;
+      padding-left: 0.8em;
+      //clear: both;
+    }
+  }
+
+
+  .links {
+    @media #{$max-md} {
+      margin-bottom: 2em;
+    }
+  }
+
+  h1 {
+    @media #{$max-md} {
+      line-height: 1.4em;
+    }
+  }
+
+  .purplepage {
+    @media #{$max-md} {
+      margin: 3em 0 0 0;
+    }
+
+    .bio {
+      @media #{$max-md} {
+        padding: 1em 0 0 1.4em;
+      }
+    }
+  }
+
+  .more {
+    padding: 1em 0 1em 1.2em;
+
+    a:link, a:visited {
+      color: #f13ab8;
+    }
+  }
+
+
+  .column {
+    float: left;
+    width: 25%;
+
+    @media #{$max-md} {
+      width: 100%;
+    }
+
+  }
+
+  oblink {
+    cursor: pointer;
+  }
+
+  .newsboxInline {
+    @media #{$md} {
+      max-width: 60%;
+      height: 540px;
+    }
+
+    @media #{$max-md} {
+      padding: 1em;
+    }
+
+    h2 {
+      font-size: 1.6em;
+      color: $blue;
+      margin: 1.4em 0;
+
+      @media #{$md} {
+        margin: 1.4em 0;
+      }
+    }
+
+    iframe {
+      @media #{$max-md} {
+        border: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-height: 540px;
+      }
+    }
+  }
+
+  .dioramas-home {
+    padding: 1.4em 1.4em;
+    margin-top: 1.4em;
+    background-color: lighten($blue, 66%);
+  }
+
+  .mySlides > span {
+    z-index: 99999999;
+    pointer-events: all;
+  }
+}*/

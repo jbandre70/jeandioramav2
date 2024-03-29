@@ -1,0 +1,28 @@
+.illustration {
+  text-align: center;
+  min-height: 500px;
+  .wrapped {
+    display: inline-block;
+    div {
+      margin:12px;
+      float: left;
+      cursor: crosshair;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.item_d {
+  transition:
+          box-shadow .5s,
+          opacity .5s;
+}
+
+.item_d:hover ob-link img {
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0 ,.2);
+  opacity: .9;
+}
+

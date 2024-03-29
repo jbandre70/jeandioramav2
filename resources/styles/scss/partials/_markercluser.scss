@@ -1,0 +1,33 @@
+.marker-cluster {
+  $size: 50px;
+  $font-size: 16px;
+
+  background: cadetblue;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: $white;
+  font-weight: 700;
+  border: 2px solid cadetblue;
+  width: 50px;
+  height: $size;
+  margin-top: calc($size / 2 * -1);
+  margin-left: calc($size / 2 * -1);
+  font-size: $font-size;
+
+  &.digits-2 {
+    --size: 60px;
+    --font-size: 22px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    border-radius: 50%;
+    z-index: -1;
+    border: 2px solid $white;
+  }
+}

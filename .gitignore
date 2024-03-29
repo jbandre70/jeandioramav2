@@ -1,0 +1,14 @@
+.env
+.git
+.idea
+jeandiorama2024.sql
+wordpress/wp-config.php
+wordpress/wp-admin
+wordpress/wp-includes
+wordpress/wp-content/plugins
+wordpress/wp-content/languages
+wordpress/wp-content/uploads
+wordpress/wp-content/themes/jeandiorama/assets
+resources/scripts/js
+
+

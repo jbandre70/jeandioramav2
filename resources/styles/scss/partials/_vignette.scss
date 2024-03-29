@@ -1,0 +1,43 @@
+.vignette {
+  padding-top: 1.2em;
+
+  @media #{$md} {
+    padding-top: 3em;
+  }
+
+  .columns {
+    border-top: 0 solid lighten($grey, 30%) !important;
+
+    .column {
+      border: 1px solid darken($grey, 5%);
+      padding: 2em 2.5em;
+      font-size: 0.8em;
+      overflow: hidden;
+
+    }
+
+    ob-link {
+      overflow: hidden;
+      img {
+        margin: 0 0 1em;
+        position: relative;
+        transition: transform .2s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+
+    p {
+      line-height: 1.4em;
+      @media #{$max-md} {
+        font-size: 0.86em;
+      }
+
+      @media #{$md} {
+        font-size: 0.8em;
+      }
+    }
+  }
+}

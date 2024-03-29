@@ -1,0 +1,87 @@
+section.texte {
+	border-top: 1px solid darken($grey, 20%);
+	background-color: lighten($grey, 0%);
+
+	.dioramaText{
+		font-size: 0.9rem;
+	}
+
+	.columns {
+		background-color: $grey;
+		border-top: darken($grey, 20%);
+	}
+
+	.column {
+		padding: 1em 1.4em 0 2em;
+		line-height: 1.4em;
+	}
+
+	h2.titre {
+		font-size: 3em;
+		padding: 0.7em 0;
+	}
+
+	@media #{$max-md} {
+		h2.titre {
+			font-size: 2em;
+			line-height: 1.4em;
+		}
+	}
+
+	@media #{$md} {
+		h2.titre {
+			font-size: 3em;
+		}
+	}
+
+	.data,
+	.purple {
+		background-color: $purple;
+		color: lighten($grey, 20%);
+		padding: .6em;
+		margin-top: .4em;
+
+		&.sold {
+			background-color: spin($purple,180°);
+		}
+	}
+
+	.data {
+		background-color: lighten($grey, 3%);
+		font-size: 0.8em;
+		color: darken($grey, 60%);
+	}
+
+	div.columns.v2 {
+		background-color: lighten($grey, 2%);
+
+		.column {
+			border: 1px solid darken($grey, 14%);
+
+			&.size {
+				padding-bottom: 1em;
+				font-size: 1em;
+			}
+
+			&.desc {
+				padding-bottom: 2em;
+				@media #{$md} {
+					padding-right:4em;
+				}
+
+				h2 {
+					font-size: 1.2em;
+					padding-bottom: 0.6em;
+					letter-spacing: 0.04em;
+				}
+			}
+		}
+
+		@media #{$max-md} {
+			.column.size {
+				padding-bottom: 1em;
+				font-size: 0.7em;
+			}
+		}
+	}
+}

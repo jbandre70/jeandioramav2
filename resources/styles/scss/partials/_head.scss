@@ -1,0 +1,186 @@
+body,
+html {
+  font-family: $fonttexte;
+  font-size: 1.15em;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  height: 60px;
+}
+
+.dslogo {
+  width: 200px;
+  height: auto;
+  margin-top: 70px;
+
+  @media #{$max-md} {
+    width: 103px;
+    margin-top: 10px;
+  }
+}
+
+h2.page {
+  @media #{$max-md} {
+    font-size: 2em;
+  }
+  font-size: 1.2em;
+}
+
+@media #{$max-md} {
+  .navbar-brand {
+    .is-hidden-tablet {
+      padding: 0 0 0 .7em;
+    }
+  }
+
+  .field.is-grouped {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2em;
+
+    .navbar-item {
+      font-size: 1.1em;
+      padding: 0;
+    }
+  }
+}
+
+a.navbar-item.is-active,
+a.navbar-item:hover,
+a.navbar-link.is-active,
+a.navbar-link:hover {
+  background-color: $purple;
+  color: $grey;
+}
+
+.navbar-end {
+  a.navbar-item {
+    font-size: 1.8em;
+
+    @media #{$max-md} {
+      margin: 1em 0 1em 1em;
+    }
+  }
+
+  a.navbar-item:link,
+  a.navbar-item:visited {
+    color: darken($grey, 20%);
+  }
+
+  a.navbar-item:hover {
+    color: lighten($grey, 20%);
+  }
+}
+
+.navbar-item {
+  @media #{$max-md} {
+    padding: 0;
+  }
+}
+
+.navbar-start .navbar-item {
+  @media #{$max-md} {
+    padding: 1em;
+  }
+}
+
+
+#navMenubd-example {
+  @media #{$max-md} {
+    &.is-active {
+      background-color: $purple;
+
+      a.navbar-item:link,
+      a.navbar-item:visited {
+        background-color: $purple;
+      }
+
+      a.navbar-item:active,
+      a.navbar-item:hover {
+        background-color: darken($grey, 20%);
+      }
+    }
+  }
+}
+
+.navbar-end {
+  padding-right: 1em;
+}
+
+section.brand {
+  background-color: lighten($grey, 3%);
+  border-bottom: 1px solid $grey;
+
+  h3 {
+    padding: 0.4em 0 0.8em 1.2em;
+    font-size: 0.8em;
+  }
+}
+
+.navbar-burger {
+  margin-top: 0.4em;
+}
+
+span.icon.baisse {
+  font-size: 1.2em;
+  padding-top: 0.4em;
+}
+
+main {
+  @media #{$max-md} {
+    clear: both;
+
+  }
+}
+
+h1 {
+  font-size: 2em;
+  font-family: $fonttexte;
+
+  @media #{$max-md} {
+    font-size: 1.2em;
+    padding-left: 0.4em;
+  }
+}
+
+.section {
+  padding: 1rem;
+}
+
+.columns {
+  border-top: 1px solid darken($grey, 30%);
+}
+
+.column {
+  padding: 1em 2em;
+
+  @media #{$max-md} {
+    padding: 1em;
+  }
+
+  &.form {
+    padding: 0 3em;;
+  }
+}
+
+.accrochemobile {
+  font-size: 2em;
+  line-height: 1.3em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+
+  h1 {
+    font-size: 3rem;
+    color: $white;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 2em .2em;
+  }
+}
+
+ob-link {
+  cursor: pointer !important;
+}

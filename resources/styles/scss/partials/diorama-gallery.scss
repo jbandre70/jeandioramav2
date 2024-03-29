@@ -1,0 +1,245 @@
+diorama-slide.slider-lame,
+diorama-slide-video.slider-lame {
+    height: $diorama-slide-height;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 8rem;
+
+    @media #{$max-md} {
+        width: 400px;
+        max-width: 100%;
+        margin-bottom: 1rem;
+        height: 320px;
+    }
+
+    .slides {
+        position: relative;
+        pointer-events: none;
+        max-width: 100%;
+        height: inherit;
+        width: 1000px;
+
+        img {
+            position: absolute;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: hidden;
+            max-height: 100%;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+    }
+
+    svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3em;
+        height: 3em;
+        fill: color.adjust($grey, $lightness: 30%);
+        opacity: .5;
+        z-index: 9;
+        cursor: pointer;
+
+        @media #{$max-md} {
+            top: 70%;
+            fill: $white;
+            width: 1.8em;
+            height: 1.8em;
+        }
+    }
+
+    &.fullscreen {
+        $diorama-slide-width: 50vw;
+        $diorama-slide-height: 50vw;
+
+        .slides {
+            width: 100vw !important;
+            height: 100vh !important;
+        }
+
+        svg {
+            transform: scale(2);
+            margin: 0 20px;
+        }
+
+        img {
+            height: auto;
+            width: auto;
+            max-width: 100vw;
+        }
+
+        .thumbnails {
+            bottom: 20px;
+            gap: 30px;
+
+            > div:empty {
+                border-width: $gap;
+                border-radius: $gap;
+            }
+        }
+    }
+
+    svg:first-of-type {
+        left: 20px;
+
+        @media #{$max-md} {
+            left: 6px;
+        }
+    }
+
+    svg:last-of-type {
+        right: 20px;
+
+        @media #{$max-md} {
+            right: 15px;
+        }
+    }
+
+    .thumbnails-wrapper {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10px;
+
+        .thumbnails {
+            position: relative;
+            transition: left 1s;
+            display: grid;
+            left: calc(25vw - (6vw * var(--index)));
+            gap: $gap;
+            width: max-content;
+            padding: 0 40px;
+            justify-content: start;
+            grid-auto-flow: column;
+            margin-bottom: 1em;
+
+            &.center {
+                width: 100%;
+                justify-content: center;
+            }
+
+            @media #{$max-md} {
+                display: none;
+            }
+
+            img {
+                height: auto;
+                cursor: pointer;
+                width: 100px;
+                opacity: .6;
+                filter: grayscale(70%);
+
+                &.active {
+                    opacity: 1;
+                    filter: inherit;
+                }
+            }
+
+            > div:empty {
+                border-radius: 5px;
+                opacity: .5;
+                transition: opacity .2s ease-in-out;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .previous:hover,
+    .next:hover,
+    .slides:not(.slide-left) > *.active,
+    .thumbnails > div:empty:hover,
+    .thumbnails > div.active:empty {
+        opacity: 1;
+    }
+
+    .prev,
+    .next {
+         padding: 4px;
+         margin-top: -50px;
+         background-color: gray;
+         font-size: 20px;
+         transition: 0.6s ease;
+         border-radius: 0 3px 3px 0;
+    }
+
+    .pinterest {
+        right: 100px;
+        position: absolute;
+    }
+}
+
+
+
+diorama-slide:-webkit-full-screen {
+    width: 100vw !important;
+    height: 100vh !important;
+    background-color: $black;
+}
+
+diorama-slide[data-type]::before {
+    content: attr(data-type);
+    position: absolute;
+    top: $gap;
+    left: $gap;
+    text-transform: uppercase;
+    z-index: 1;
+    color: $black;
+    background-color:red;
+    padding: 5px $gap;
+    border-radius: 5px;
+}
+
+diorama-slide.slide-left .slides,
+diorama-slide-v2.slide-left .slides {
+    position: absolute;
+    left: calc(var(--index) * 100vw * -1);
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.carousel-top {
+    @media #{$md} {
+        min-height: 700px;
+        padding: 30px 10px 40px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    .thumbnails-wrapper {
+        margin-top: 20px;
+    }
+}
+
+
+diorama-slide.slider-lame:not(slide-left) {
+    .slides > * {
+        transition: opacity 1s;
+    }
+}
+
+diorama-slide.slider-lame:not(.slide-left) .slides {
+    width: inherit;
+}
+
+diorama-slide.slider-lame.slide-left:not(.fullscreen) .slides {
+    transition: left 1s;
+}
+
+@media #{$md} {
+    diorama-slide.slider-lame:not(.slide-left) .slides > * {
+        position: absolute;
+        opacity: 0;
+        transition: opacity 1s;
+        overflow: hidden;
+        height: inherit;
+    }
+}

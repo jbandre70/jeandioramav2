@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <symbol id="icon-arrow-right" viewBox="0 0 20 20">
+        <rect height="3" rx="1.5" y="-1.5" width="14.14" x="-14.14" transform="translate(15.54 11.08)  rotate(45)"></rect>
+        <rect x="0" height="3" rx="1.5" width="14.14" y="14.14" transform="translate(-5.58 8.08) rotate(-45)"></rect>
+    </symbol>
+    <symbol id="icon-arrow-left" viewBox="0 0 20 20">
+        <use href="#icon-arrow-right" transform="scale(-1 1) translate(-20 0)"></use>
+    </symbol>
+</svg>

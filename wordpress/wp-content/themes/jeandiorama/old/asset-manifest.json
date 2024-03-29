@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5398a917.chunk.css",
+    "main.js": "/static/js/main.b13d9d4c.chunk.js",
+    "main.js.map": "/static/js/main.b13d9d4c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9fdac47b.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9fdac47b.js.map",
+    "static/css/2.ca97d24b.chunk.css": "/static/css/2.ca97d24b.chunk.css",
+    "static/js/2.671af116.chunk.js": "/static/js/2.671af116.chunk.js",
+    "static/js/2.671af116.chunk.js.map": "/static/js/2.671af116.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c08c605a9d7c0df087a633f541948034.js": "/precache-manifest.c08c605a9d7c0df087a633f541948034.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.ca97d24b.chunk.css.map": "/static/css/2.ca97d24b.chunk.css.map",
+    "static/css/main.5398a917.chunk.css.map": "/static/css/main.5398a917.chunk.css.map",
+    "static/media/arrow-long-right-white.svg": "/static/media/arrow-long-right-white.9f20f4be.svg",
+    "static/media/App.scss": "/static/media/brandon_reg-webfont.fef215a9.ttf",
+    "static/media/distantshoresg.svg": "/static/media/distantshoresg.0fb106fe.svg",
+    "static/media/facebook.svg": "/static/media/facebook.5990e839.svg",
+    "static/media/instagram.svg": "/static/media/instagram.e8b0b2ac.svg",
+    "static/media/logo1.svg": "/static/media/logo1.0dbcaa6e.svg",
+    "static/media/markerb.svg": "/static/media/markerb.9a82d0c1.svg",
+    "static/media/pinterest.svg": "/static/media/pinterest.84d16ae0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fdac47b.js",
+    "static/css/2.ca97d24b.chunk.css",
+    "static/js/2.671af116.chunk.js",
+    "static/css/main.5398a917.chunk.css",
+    "static/js/main.b13d9d4c.chunk.js"
+  ]
+}
